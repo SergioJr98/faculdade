@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>GameBook</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
@@ -13,15 +13,18 @@
 </head>
 <body>
 
+<!-- BARRA DE NAVEGAÇAO -->
     <header class="header">
+        <a href="#"><img src="logo.png" alt="#"></a>
         <nav>
             <ul class="navlinks">
-                <li><i class="bi-heart-fill"></i><a href="#">Favoritos</a></li>
                 <li><i class="bi-file-person"></i><a href="#">Entrar</a></li>
+                <li><i class="bi-heart-fill"></i><a href="#">Favoritos</a></li>
                 <li><i class="bi-bag-check-fill"></i><a href="#">Minha Cesta</a></li>
             </ul>
         </nav>
     </header>
+<!-- BARRA DE NAVEGAÇAO -->
 
 <!-- BARRA DE PESQUISA -->
         <div class="pesquisa">
@@ -31,7 +34,32 @@
             <input type="text" id="barra-pesquisa" placeholder="Pesquisar">
         </div>
 <!--BARRA DE PESQUISA--> 
- 
+
+<!-- CARD DE SLIDES -->
+<div class="slider">
+    <div class="item">
+        <a href="#"><img src="avatar-1.jpg" alt="#"></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="avatar-2.jpg" alt="#"></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="avatar-3.jpg" alt="#"></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="avatar-4.png" alt="#"></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="avatar-5.jpg" alt="#"></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="avatar-6.jpg" alt="#"></a>
+    </div>
+    <button id="next">></button>
+    <button id="prev"><</button>
+</div>
+<!-- CARD DE SLIDES -->
+
 <!--RODAPÉ-->
         <main>
         </main>
@@ -97,5 +125,9 @@
             </div>
         </footer>
 <!--RODAPÉ-->
+
+<!--JAVASCRIPT-->
+        <script src="script.js"></script>
+<!--JAVASCRIPT-->
 </body>
 </html>
