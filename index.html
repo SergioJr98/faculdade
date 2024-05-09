@@ -10,16 +10,28 @@
     <!--bootstrap-->
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 </head>
 <body>
     <!-- CABEÇALHO -->
-    <header>
+    <header class="clearfix">
         <!-- BARRA DE NAVEGAÇAO -->
         <div class="primeira-header">
-            <a href="#"><img src="/img/logo.png" alt="#"></a>
+            <!--Logotipo-->
+            <a href="#"><img src="/img/logo-gamebook.jpg" alt="#"></a>
+            <!--Logotipo-->
+            <!-- BARRA DE PESQUISA -->
+            <div class="pesquisa">
+                <label for="">
+                    <i class="bi bi-search"></i>
+                </label>
+                <input type="text" id="barra-pesquisa" placeholder="Pesquisar">
+            </div>
+            <!-- BARRA DE PESQUISA -->
             <nav>
                 <ul class="navlinks">
                     <li><i class="bi-file-person"></i><a href="#">Entrar</a></li>
@@ -29,22 +41,118 @@
             </nav>
         </div>
         <!-- BARRA DE NAVEGAÇAO -->
-
-        <!-- BARRA DE PESQUISA -->
-        <div class="pesquisa">
-            <label for="">
-                <i class="bi bi-search"></i>
-            </label>
-            <input type="text" id="barra-pesquisa" placeholder="Pesquisar">
-        </div>
-        <!--BARRA DE PESQUISA--> 
     </header>
     <!-- CABEÇALHO -->
 
     <!-- CONTEÚDO PRINCIPAL DO SITE -->
-    <main>            
+    <main>
+        <!--BANNER DE PROMOÇÕES-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <!-- Início indicadores para navegar nos slides do carousel (localizados na parte de baixo do carousel)-->
+            <div class="carousel-indicators">
+                <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+                ></button>
+                <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                ></button>
+                <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+                ></button>
+            </div>
+            <!-- fim indicadores para navegar nos slides do carousel-->
+
+            <!--Inicio slide carrousel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img
+                    src="img/banner 1.gif"
+                    class="d-block w-100"
+                    alt="Promoção de jogos"
+                />
+                </div>
+                <div class="carousel-item">
+                <img
+                    src="img/banner 2.jpg"
+                    class="d-block w-100"
+                    alt="Banner livros aproveite"
+                />
+                </div>
+                <div class="carousel-item">
+                <img
+                    src="img/banner 3.jpg"
+                    class="d-block w-100"
+                    alt="frete gratis em compras acima de R$200,00"
+                />
+                </div>
+            </div>
+            <!--Fim slide carrousel-->
+
+            <!--Inicio setas "anterior" e "proximo" dos slides carrousel-->
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <!--Fim setas "anterior" e "proximo" dos slides carrousel-->
+        </div>
+        <!--BANNER DE PROMOÇÕES-->
+
+        
+        <h2 class="titulo-card">MAIS VENDIDOS EM LIVROS</h2>
+        <!-- CARD DE SLIDES LIVROS-->
+        <div class="slider-livros clearfix" style="float: left;">
+            <div class="item-livro">
+                <a href="#"><img src="/img/livro-1.jpg" alt="#"></a>
+            </div>
+            <div class="item-livro">
+                <a href="#"><img src="/img/livro-2.jpg" alt="#"></a>
+            </div>
+            <div class="item-livro">
+                <a href="#"><img src="/img/livro-3.jpg" alt="#"></a>
+            </div>
+            <div class="item-livro">
+                <a href="#"><img src="/img/livro-4.jpg" alt="#"></a>
+            </div>
+            <div class="item-livro">
+                <a href="#"><img src="/img/livro-5.jpg" alt="#"></a>
+            </div>
+            <div class="item-livro">
+                <a href="#"><img src="/img/livro-6.jpg" alt="#"></a>
+            </div>
+            <button id="next-livro">></button>
+            <button id="prev-livro"><</button>
+        </div>
         <!-- CARD DE SLIDES -->
-        <div class="slider">
+
+        
+        <!-- CARD DE SLIDES -->
+        <h2 class="titulo-card">MAIS VENDIDOS EM JOGOS</h2>
+        <div class="slider clearfix">
             <div class="item">
                 <a href="#"><img src="/img/avatar-1.jpg" alt="#"></a>
             </div>
@@ -67,6 +175,8 @@
             <button id="prev"><</button>
         </div>
         <!-- CARD DE SLIDES -->
+
+        
     </main>
     <!-- CONTEÚDO PRINCIPAL DO SITE -->
 
@@ -74,7 +184,7 @@
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
-                <h1>Contato</h1>
+                <h3>Contato</h3>
                 <p>Fale Conosco</p>
 
                 <div id="footer_social_media">
@@ -108,7 +218,7 @@
                 <li>
                     <h3>Formas de Pagamento</h3>
                 </li>
-                <img src="/img/pagamentos.png">
+                <img id="img-formas-pagamento" src="/img/pagamentos.png" >
             </ul>
 
             <div id="footer_subscribe">

@@ -12,10 +12,12 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 2%;
   background-color: #2f0861;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  float: left;
+  width: 100%;
 }
 
 .navlinks li {
@@ -60,9 +62,10 @@ body {
 }
 
 .primeira-header img {
-  height: 80px;
-  width: 80px;
-  margin-left: -1150px;
+  height: 60px;
+  width: 210px;
+  padding: 5px 20px;
+  margin-left: 2px;
 }
 /* BARRA DE NAVEGAÇAO */
 
@@ -102,6 +105,12 @@ body {
 }
 /* BARRA DE PESQUISA */
 
+/*BANNER PROMOÇOES*/
+#carouselExampleIndicators img {
+  margin-left: 0;
+}
+/*BANNER PROMOÇOES*/
+
 /* rodapé */
 :root {
   --color-neutral-0: #ffffff;
@@ -125,6 +134,7 @@ main {
 footer {
   width: 100%;
   color: var(--color-neutral-40);
+  float: left;
 }
 
 .footer-link {
@@ -136,6 +146,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 3rem 3.5rem;
+  gap: 2rem;
 }
 
 #footer_contacts h1 {
@@ -260,14 +271,14 @@ footer {
   }
 }
 
-img {
-  height: 300px;
-  width: 400px;
+#img-formas-pagamento {
+  height: 200px;
+  width: 300px;
   display: flex;
-  margin-left: -100px;
+  margin-left: 1px;
 }
 
-#input_group {
+*/ #input_group {
   color: black;
 }
 
@@ -277,18 +288,81 @@ img {
 }
 /* rodapé */
 
+/* CARD LIVROS*/
+.titulo-card {
+  color: #000;
+  font-family: Ubuntu, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  width: 100%;
+  margin-top: 140px;
+  float: left;
+}
+.slider-livros {
+  position: relative;
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+  margin-top: 10px;
+  float: left;
+}
+.item-livro {
+  position: absolute;
+  width: 200px;
+  height: 320px;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 0;
+}
+#next-livro,
+#prev-livro {
+  position: absolute;
+  top: 40%;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  left: 400px;
+  font-size: 50px;
+}
+#next-livro {
+  left: unset;
+  right: 400px;
+}
+
+.item-livro img {
+  width: 240px;
+  border-radius: 10px;
+  height: 360px;
+  display: flex;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+/* CARD LIVROS*/
+
 /* CARD JOGOS*/
 body {
   background-image: linear-gradient(to top right, #858585, #ffffff);
   min-height: 100vh;
   margin: 0;
 }
+
 .slider {
   position: relative;
   width: 100%;
   height: 370px;
   overflow: hidden;
-  margin-top: 150px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  float: left;
 }
 .item {
   position: absolute;
@@ -312,7 +386,7 @@ body {
   font-family: monospace;
   font-weight: bold;
   left: 400px;
-  font-size: 25px;
+  font-size: 50px;
 }
 #next {
   left: unset;
