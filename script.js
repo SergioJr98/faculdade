@@ -1,9 +1,4 @@
-let items = document.querySelectorAll(".slider .item");
-let next = document.getElementById("next");
-let prev = document.getElementById("prev");
-
-let active = 3;
-function loadShow() {
+function loadShow(items, active) {
   let stt = 0;
   items[active].style.transform = `none`;
   items[active].style.zIndex = 1;
@@ -29,14 +24,22 @@ function loadShow() {
     items[i].style.opacity = stt > 2 ? 0 : 0.6;
   }
 }
-loadShow();
+
+let items = document.querySelectorAll(".slider .item");
+let next = document.getElementById("next");
+let prev = document.getElementById("prev");
+
+let active = 3;
+
+loadShow(items, active);
+
 next.onclick = function () {
   active = active + 1 < items.length ? active + 1 : active;
-  loadShow();
+  loadShow(items, active);
 };
 prev.onclick = function () {
   active = active - 1 >= 0 ? active - 1 : active;
-  loadShow();
+  loadShow(items, active);
 };
 
 window.onload = function () {
@@ -66,47 +69,24 @@ window.onload = function () {
     }
   }, 1500);
 };
-//livros----------------------------------------------
+
+//card livros----------------------------------------------
 let items_livro = document.querySelectorAll(".slider-livros .item-livro");
 let next_livro = document.getElementById("next-livro");
 let prev_livro = document.getElementById("prev-livro");
 
 let active_livro = 3;
-function loadShow_livro() {
-  let stt_livro = 0;
-  items_livro[active_livro].style.transform = `none`;
-  items_livro[active_livro].style.zIndex = 1;
-  items_livro[active_livro].style.filter = "none";
-  items_livro[active_livro].style.opacity = 1;
-  for (var i = active_livro + 1; i < items_livro.length; i++) {
-    stt_livro++;
-    items_livro[i].style.transform = `translateX(${120 * stt_livro}px) scale(${
-      1 - 0.2 * stt_livro
-    }) perspective(16px) rotateY(-1deg)`;
-    items_livro[i].style.zIndex = -stt_livro;
-    items_livro[i].style.filter = "blur(5px)";
-    items_livro[i].style.opacity = stt_livro > 2 ? 0 : 0.6;
-  }
-  stt_livro = 0;
-  for (var i = active_livro - 1; i >= 0; i--) {
-    stt_livro++;
-    items_livro[i].style.transform = `translateX(${-120 * stt_livro}px) scale(${
-      1 - 0.2 * stt_livro
-    }) perspective(16px) rotateY(1deg)`;
-    items_livro[i].style.zIndex = -stt_livro;
-    items_livro[i].style.filter = "blur(5px)";
-    items_livro[i].style.opacity = stt_livro > 2 ? 0 : 0.6;
-  }
-}
-loadShow_livro();
+
+loadShow(items_livro, active_livro);
+
 next_livro.onclick = function () {
   active_livro =
     active_livro + 1 < items_livro.length ? active_livro + 1 : active_livro;
-  loadShow_livro();
+  loadShow(items_livro, active_livro);
 };
 prev_livro.onclick = function () {
   active_livro = active_livro - 1 >= 0 ? active_livro - 1 : active_livro;
-  loadShow_livro();
+  loadShow(items_livro, active_livro);
 };
 
 window.onload = function () {
