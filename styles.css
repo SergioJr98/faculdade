@@ -7,6 +7,14 @@ body {
   background-color: rgb(231, 230, 230);
 }
 
+body {
+  background-image: linear-gradient(to top right, #858585, #ffffff);
+  min-height: 100vh;
+  margin: 0;
+}
+
+/*-----------------cabeçalho--------------------*/
+
 /* BARRA DE NAVEGAÇAO */
 .primeira-header {
   display: flex;
@@ -20,6 +28,21 @@ body {
   width: 100%;
 }
 
+.primeira-header .dropdown button {
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 70px;
+  transition: all 0.6s ease 0s;
+  font-size: 20px;
+  --bs-btn-color: #fff;
+  font-family: Ubuntu;
+}
+
+.primeira-header .dropdown button:hover {
+  color: rgb(153, 245, 235);
+}
+
 .navlinks li {
   display: inline-block;
   padding: 0px 20px;
@@ -31,7 +54,7 @@ body {
   text-decoration: none;
 }
 .navlinks li a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(153, 245, 235);
 }
 
 .bi-heart-fill {
@@ -65,7 +88,7 @@ body {
   height: 60px;
   width: 210px;
   padding: 5px 20px;
-  margin-left: 2px;
+  margin-left: -30px;
 }
 /* BARRA DE NAVEGAÇAO */
 
@@ -105,13 +128,229 @@ body {
 }
 /* BARRA DE PESQUISA */
 
+/*-----------------cabeçalho--------------------*/
+
+/*----------conteúdo principal (main)---------*/
+
 /*BANNER PROMOÇOES*/
 #carouselExampleIndicators img {
   margin-left: 0;
 }
 /*BANNER PROMOÇOES*/
 
-/* rodapé */
+/* CARD LIVROS*/
+.titulo-card {
+  color: #000;
+  font-family: Ubuntu, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  width: 100%;
+  margin-top: 140px;
+  float: left;
+}
+.slider-livros {
+  position: relative;
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+  margin-top: 10px;
+  float: left;
+}
+.item-livro {
+  position: absolute;
+  width: 200px;
+  height: 320px;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 0;
+}
+#next-livro,
+#prev-livro {
+  position: absolute;
+  top: 40%;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  left: 400px;
+  font-size: 50px;
+}
+#next-livro {
+  left: unset;
+  right: 400px;
+}
+
+.item-livro img {
+  width: 240px;
+  border-radius: 10px;
+  height: 360px;
+  display: flex;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+/* CARD LIVROS*/
+
+/* CARD JOGOS*/
+.slider {
+  position: relative;
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  float: left;
+}
+.item {
+  position: absolute;
+  width: 200px;
+  height: 320px;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 0;
+}
+#next,
+#prev {
+  position: absolute;
+  top: 40%;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  left: 400px;
+  font-size: 50px;
+}
+#next {
+  left: unset;
+  right: 400px;
+}
+
+.item img {
+  width: 240px;
+  border-radius: 10px;
+  height: 360px;
+  display: flex;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+/* CARD JOGOS*/
+
+/* Formulario de Login*/
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*min-height: 75vh;*/
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px 10px;
+  margin-top: 70px;
+  float: left;
+}
+.login h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.login .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+}
+.login .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forgot label input {
+  margin-right: 3px;
+}
+.login .btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: #25d366;
+}
+/* Formulario de Login*/
+
+/* Formulario de Registro*/
+
+.registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px 10px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  float: left;
+}
+.registro h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.registro .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+}
+.registro .btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: #25d366;
+}
+
+/* Formulario de Registro*/
+
+/*----------------------conteúdo principal (main)-----------------*/
+
+/* --------------------------rodapé-------------------------- */
 :root {
   --color-neutral-0: #ffffff;
   --color-neutral-10: #100023;
@@ -254,7 +493,7 @@ footer {
   font-size: 0.9rem;
   padding: 1.5rem;
   font-weight: 100;
-  color: rgb(255, 165, 165);
+  color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 768px) {
@@ -286,119 +525,5 @@ footer {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-/* rodapé */
 
-/* CARD LIVROS*/
-.titulo-card {
-  color: #000;
-  font-family: Ubuntu, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: center;
-  width: 100%;
-  margin-top: 140px;
-  float: left;
-}
-.slider-livros {
-  position: relative;
-  width: 100%;
-  height: 370px;
-  overflow: hidden;
-  margin-top: 10px;
-  float: left;
-}
-.item-livro {
-  position: absolute;
-  width: 200px;
-  height: 320px;
-  text-align: justify;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  transition: 0.5s;
-  left: calc(50% - 110px);
-  top: 0;
-}
-#next-livro,
-#prev-livro {
-  position: absolute;
-  top: 40%;
-  color: #000000;
-  background-color: transparent;
-  border: none;
-  font-family: monospace;
-  font-weight: bold;
-  left: 400px;
-  font-size: 50px;
-}
-#next-livro {
-  left: unset;
-  right: 400px;
-}
-
-.item-livro img {
-  width: 240px;
-  border-radius: 10px;
-  height: 360px;
-  display: flex;
-  margin-left: -20px;
-  margin-top: -20px;
-}
-/* CARD LIVROS*/
-
-/* CARD JOGOS*/
-body {
-  background-image: linear-gradient(to top right, #858585, #ffffff);
-  min-height: 100vh;
-  margin: 0;
-}
-
-.slider {
-  position: relative;
-  width: 100%;
-  height: 370px;
-  overflow: hidden;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  float: left;
-}
-.item {
-  position: absolute;
-  width: 200px;
-  height: 320px;
-  text-align: justify;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  transition: 0.5s;
-  left: calc(50% - 110px);
-  top: 0;
-}
-#next,
-#prev {
-  position: absolute;
-  top: 40%;
-  color: #000000;
-  background-color: transparent;
-  border: none;
-  font-family: monospace;
-  font-weight: bold;
-  left: 400px;
-  font-size: 50px;
-}
-#next {
-  left: unset;
-  right: 400px;
-}
-
-.item img {
-  width: 240px;
-  border-radius: 10px;
-  height: 360px;
-  display: flex;
-  margin-left: -20px;
-  margin-top: -20px;
-}
-/* CARD JOGOS*/
+/* ------------------------rodapé-------------------------- */
