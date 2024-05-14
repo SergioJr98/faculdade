@@ -1,17 +1,22 @@
 * {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: rgb(231, 230, 230);
-}
 
 body {
+  background-color: rgb(231, 230, 230);
   background-image: linear-gradient(to top right, #858585, #ffffff);
   min-height: 100vh;
   margin: 0;
 }
+
+
 
 /*-----------------cabeçalho--------------------*/
 
@@ -131,6 +136,10 @@ body {
 /*-----------------cabeçalho--------------------*/
 
 /*----------conteúdo principal (main)---------*/
+
+main {
+  height: 80vh;
+}
 
 /*BANNER PROMOÇOES*/
 #carouselExampleIndicators img {
@@ -358,17 +367,6 @@ body {
   --color-neutral-40: #ffffff;
 }
 
-* {
-  font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  letter-spacing: 1px;
-}
-
-main {
-  height: 80vh;
-}
 
 footer {
   width: 100%;
@@ -390,6 +388,14 @@ footer {
 
 #footer_contacts h1 {
   margin-bottom: 0.75rem;
+}
+#footer_contacts .footer-link{
+  color: var(--color-neutral-40);
+  transition: all 0.4s;
+}
+
+#footer_contacts .footer-link:hover {
+  color: #37b3c9;
 }
 
 #footer_social_media {
@@ -444,7 +450,7 @@ footer {
 }
 
 .footer-list .footer-link:hover {
-  color: #7f37c9;
+  color: #37b3c9;
 }
 
 #footer_subscribe {
