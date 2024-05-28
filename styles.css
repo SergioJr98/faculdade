@@ -21,6 +21,7 @@ body {
 /* BARRA DE NAVEGAÇAO */
 .primeira-header {
   font-family: "Ubuntu", "Inter", sans-serif;
+  font-size: 19px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -132,7 +133,7 @@ body {
 
 ::-webkit-input-placeholder {
   color: rgb(99, 98, 98);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bolder;
 }
 /* BARRA DE PESQUISA */
