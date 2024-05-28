@@ -16,8 +16,6 @@ body {
   margin: 0;
 }
 
-
-
 /*-----------------cabeçalho--------------------*/
 
 /* BARRA DE NAVEGAÇAO */
@@ -45,7 +43,7 @@ body {
   font-family: "Ubuntu", "Inter", sans-serif;
 }
 
-.primeira-header .dropdown-item{
+.primeira-header .dropdown-item {
   font-family: "Ubuntu", "Inter", sans-serif;
 }
 .primeira-header .dropdown button:hover {
@@ -142,8 +140,6 @@ body {
 /*-----------------cabeçalho--------------------*/
 
 /*----------conteúdo principal (main)---------*/
-
-
 
 /*BANNER PROMOÇOES*/
 #carouselExampleIndicators img {
@@ -259,6 +255,16 @@ body {
   margin-top: -20px;
 }
 /* CARD JOGOS*/
+/*Formulario de atualização de dados e remoção de conta*/
+#remover-conta-btn {
+  margin-top: 1px;
+  /*padding-top: 30px;*/
+}
+
+#form-remover-conta {
+  margin-top: 40px;
+  padding-top: 50px;
+}
 
 /* Formulario de Login*/
 .login {
@@ -374,32 +380,32 @@ body {
     margin-left: 100px;
   }
 }
-.pagina-produto h1{
+.pagina-produto h1 {
   font-size: 30px;
 }
 
-.container h1{
+.container h1 {
   margin-left: 40px;
   margin-top: -10px;
 }
 
-.pagina-produto h2{
+.pagina-produto h2 {
   margin-left: 100px;
   margin-top: 20px;
   font-size: 25px;
   margin-left: 150px;
 }
 
-.pagina-produto h3{
+.pagina-produto h3 {
   margin-left: 100px;
 }
 
-.pagina-produto h5{
+.pagina-produto h5 {
   margin-left: 100px;
   line-height: 40px;
 }
 
-.pagina-produto button{
+.pagina-produto button {
   background-color: #00ffb3;
   border: none;
   border-radius: 10px;
@@ -409,7 +415,7 @@ body {
   margin-left: 100px;
 }
 
-.pagina-produto .container img{
+.pagina-produto .container img {
   width: 254px;
   height: 335px;
   margin-left: -300px;
@@ -417,7 +423,7 @@ body {
   border-radius: 20px;
 }
 
-.background{
+.background {
   margin-left: 600px;
   margin-top: 20px;
   background-color: #d6d6d6;
@@ -426,18 +432,18 @@ body {
   border-radius: 20px;
 }
 
-#frete{
+#frete {
   margin-left: 100px;
   border-radius: 5px;
   border: none;
   padding: 12px;
 }
 
-#frete::placeholder {  
-  color: rgb(173, 171, 171); 
+#frete::placeholder {
+  color: rgb(173, 171, 171);
 }
 
-#botao{
+#botao {
   margin-left: 10px;
   background-color: #00ffb3;
   border: none;
@@ -446,18 +452,18 @@ body {
   border-radius: 10px;
 }
 
-#frete2{
+#frete2 {
   padding-top: 25px;
 }
 
-.descricao{
+.descricao {
   width: 95%;
   align-self: center;
   text-align: justify;
   font-family: "Ubuntu", "Inter", sans-serif;
 }
 
-.descricao h1{
+.descricao h1 {
   color: black;
   font-size: 30px;
   font-family: "Ubuntu", "Inter", sans-serif;
@@ -467,12 +473,11 @@ body {
   margin-top: 50px;
 }
 
-.descricao h2{
+.descricao h2 {
   font-family: "Ubuntu", "Inter", sans-serif;
-
 }
 
-.pagina-produto .detalhes{
+.pagina-produto .detalhes {
   margin-left: 150px;
   margin-top: 120px;
   margin-bottom: 120px;
@@ -480,16 +485,16 @@ body {
   font-family: "Ubuntu", "Inter", sans-serif;
 }
 
-.detalhes h1{
+.detalhes h1 {
   font-family: "Ubuntu", "Inter", sans-serif;
 }
 
-.pagina-produto .slider2 img{
+.pagina-produto .slider2 img {
   width: 300px;
   height: 258px;
 }
 
-.pagina-produto .slider2{
+.pagina-produto .slider2 {
   margin-top: 100px;
   width: 95%;
   align-self: center;
@@ -507,7 +512,6 @@ body {
   --color-neutral-30: #a8a29e;
   --color-neutral-40: #ffffff;
 }
-
 
 footer {
   width: 100%;
@@ -530,7 +534,7 @@ footer {
 #footer_contacts h1 {
   margin-bottom: 0.75rem;
 }
-#footer_contacts .footer-link{
+#footer_contacts .footer-link {
   color: var(--color-neutral-40);
   transition: all 0.4s;
 }
@@ -675,4 +679,3 @@ footer {
 }
 
 /* ------------------------rodapé-------------------------- */
-
