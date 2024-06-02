@@ -138,10 +138,11 @@ body {
 }
 /* BARRA DE PESQUISA */
 
-/*-----------------cabeçalho--------------------*/
+/*-----------------------cabeçalho-------------------------------*/
 
-/*----------conteúdo principal (main)---------*/
+/*---------------------conteúdo principal (main)----------------*/
 
+/*-----------------Página inicial----------*/
 /*BANNER PROMOÇOES*/
 #carouselExampleIndicators img {
   margin-left: 0;
@@ -256,17 +257,8 @@ body {
   margin-top: -20px;
 }
 /* CARD JOGOS*/
-/*Formulario de atualização de dados e remoção de conta*/
-#remover-conta-btn {
-  margin-top: 1px;
-  /*padding-top: 30px;*/
-}
-
-#form-remover-conta {
-  margin-top: 40px;
-  padding-top: 50px;
-}
-
+/*-----------------Página inicial----------*/
+/*-----------------Página login------------*/
 /* Formulario de Login*/
 .login {
   display: flex;
@@ -279,16 +271,19 @@ body {
   margin-top: 70px;
   float: left;
 }
+
 .login h1 {
   font-size: 36px;
   text-align: center;
 }
+
 .login .input-box {
   width: 100%;
   height: 50px;
   margin: 30px 0;
 }
-.input-box input {
+
+.login .input-box input {
   width: 100%;
   height: 100%;
   border: none;
@@ -298,15 +293,22 @@ body {
   font-size: 16px;
   padding: 20px 45px 20px 20px;
 }
+
 .login .remember-forgot {
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
   margin: -15px 0 15px;
 }
+
 .remember-forgot label input {
-  margin-right: 3px;
+  margin-right: 5px;
 }
+
+.remember-forgot a {
+  margin-left: 10px;
+}
+
 .login .btn {
   width: 100%;
   height: 45px;
@@ -343,7 +345,7 @@ body {
   height: 50px;
   margin: 30px 0;
 }
-.input-box input {
+.registro .input-box input {
   width: 100%;
   height: 100%;
   border: none;
@@ -367,6 +369,101 @@ body {
 }
 
 /* Formulario de Registro*/
+/*-----------------Página login------------*/
+
+/*-----------Página atualização dados---------*/
+/*Formulario de atualização de dados*/
+
+.atualizar-dados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px 10px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  float: left;
+}
+.atualizar-dados h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.atualizar-dados .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.atualizar-dados .input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+}
+.atualizar-dados .btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: #25d366;
+}
+/*Formulario de atualização de dados*/
+
+/*Formulário Remover conta*/
+
+.remover-conta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px 10px;
+  /*margin-top: 10px;*/
+  margin-bottom: 100px;
+  float: left;
+}
+.remover-conta h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.remover-conta .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.remover-conta .input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+}
+.remover-conta .btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: #25d366;
+}
+/*Formulário Remover conta*/
+/*---------------Página atualização dados--------------*/
 
 /* --------------------------Página Produto-------------------------- */
 
