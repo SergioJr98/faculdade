@@ -385,15 +385,22 @@ body {
   margin-bottom: 80px;
   float: left;
 }
+
 .atualizar-dados h1 {
   font-size: 36px;
   text-align: center;
 }
+
 .atualizar-dados .input-box {
   width: 100%;
-  height: 50px;
-  margin: 30px 0;
+  margin: 20px 0;
 }
+
+.atualizar-dados label {
+  font-size: 22px;
+  padding: 5px;
+}
+
 .atualizar-dados .input-box input {
   width: 100%;
   height: 100%;
@@ -404,17 +411,20 @@ body {
   font-size: 16px;
   padding: 20px 45px 20px 20px;
 }
+
 .atualizar-dados .btn {
   width: 100%;
-  height: 45px;
+  /*height: 45px;*/
   border: none;
   outline: none;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   background: #25d366;
+  margin-top: 20px;
+  padding: 10px;
 }
 /*Formulario de atualização de dados*/
 
@@ -431,15 +441,22 @@ body {
   margin-bottom: 100px;
   float: left;
 }
+
 .remover-conta h1 {
   font-size: 36px;
   text-align: center;
 }
+
 .remover-conta .input-box {
   width: 100%;
-  height: 50px;
   margin: 30px 0;
 }
+
+.remover-conta label {
+  font-size: 22px;
+  padding: 5px;
+}
+
 .remover-conta .input-box input {
   width: 100%;
   height: 100%;
@@ -450,17 +467,19 @@ body {
   font-size: 16px;
   padding: 20px 45px 20px 20px;
 }
+
 .remover-conta .btn {
   width: 100%;
-  height: 45px;
   border: none;
   outline: none;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   background: #25d366;
+  margin-top: 5px;
+  padding: 10px;
 }
 /*Formulário Remover conta*/
 /*---------------Página atualização dados--------------*/
