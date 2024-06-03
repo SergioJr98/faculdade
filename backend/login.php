@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        if (password_verify($senha, $row['senha'])) {
+        if ($senha == $row['senha']) {
             echo "Entrou no sistema!";
         } else {
             echo "Senha incorreta.";
@@ -30,6 +30,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Usuário não encontrado.";
     }
+
+    // if ($result->num_rows > 0) {
+    //     $row = $result->fetch_assoc();
+    //     if (password_verify($senha, $row['senha'])) {
+    //         echo "Entrou no sistema!";
+    //     } else {
+    //         echo "Senha incorreta.";
+    //     }
+    // } else {
+    //     echo "Usuário não encontrado.";
+    // }
     $stmt->close();
 }
 
