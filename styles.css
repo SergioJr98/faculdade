@@ -258,7 +258,21 @@ body {
 }
 /* CARD JOGOS*/
 /*-----------------Página inicial----------*/
-/*-----------------Página login------------*/
+/*-----------------Página login/registro/atualização e remoção de usuario------------*/
+#ir-para-btn {
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: #25d366;
+  margin-top: 20px;
+  padding: 10px;
+}
+
 .btn-usuario {
   display: flex;
   justify-content: center;
@@ -383,9 +397,7 @@ body {
 }
 
 /* Formulario de Registro*/
-/*-----------------Página login------------*/
 
-/*-----------Página atualização dados---------*/
 /*Formulario de atualização de dados*/
 
 .atualizar-dados {
@@ -499,7 +511,7 @@ body {
   padding: 10px;
 }
 /*Formulário Remover conta*/
-/*---------------Página atualização dados--------------*/
+/*-----------------Página login/registro/atualização e remoção de usuario------------*/
 
 /* --------------------------Página Produto-------------------------- */
 
