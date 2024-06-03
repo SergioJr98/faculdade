@@ -260,13 +260,6 @@ body {
 /*-----------------Página inicial----------*/
 /*-----------------Página login/registro/atualização e remoção de usuario------------*/
 
-.btn-usuario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 /* Formulario de Login*/
 .btn-usuario {
   display: flex;
