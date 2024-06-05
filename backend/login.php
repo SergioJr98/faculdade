@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Successfull</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <style>
 
         .topo-php {
@@ -51,9 +51,14 @@
             cursor: pointer;
             font-size: 20px;
             font-weight: 300;
-            background: #25d366;
+            background: #76edb4;
             padding: 10px;
             float: left;
+        }
+
+        #ir-para-btn:hover {
+            border: 2px outset #bfe2c1;
+            background: #6bd1a0;
         }
 
         #bem-vindo {
