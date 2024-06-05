@@ -87,9 +87,13 @@
                 $sql = "DELETE FROM usuarios WHERE email = '$email'";
                 
                 if ($conn->query($sql) === TRUE) {
-                    echo "<h2>Conta deletada com sucesso!<h2>";
-                    echo "<div class='btn-usuario'>
-                    <a href='../usuario.html'><button type='button' id='ir-para-btn'>Voltar</button></a></div>";
+                    echo "<div class='topo-php'>
+                            <h2 id='topo-entrou'>Conta removida com sucesso!<h2>
+                            <div class='btn-usuario-php'>
+                                <a href='../usuario.html'><button type='button' id='ir-para-btn'>Voltar</button></a>
+                            </div>
+                        </div>";
+
                 } else {
                     echo "Erro: " . $sql . "<br>" . $conn->error;
                 }
