@@ -6,7 +6,7 @@ require_once ("backend/db_conexao.php");
 $id_produto = isset($_GET['id']) ? (int) $_GET['id'] : 1;
 
 // Consulta ao banco de dados
-$sql = "SELECT titulo, preco, descricao, youtube FROM produtos WHERE id = $id_produto";
+$sql = "SELECT titulo, preco, descricao, youtube FROM jogos WHERE id = $id_produto";
 $result = $conn->query($sql);
 
 // Verifica se encontrou o produto
@@ -50,7 +50,7 @@ $conn->close();
         <!-- BARRA DE NAVEGAÇAO -->
         <div class="primeira-header">
             <!--Logotipo-->
-            <a href="index.html"><img src="img/logo-gamebook.jpg" alt="#"></a>
+            <a href="index.php"><img src="imagens/logo-gamebook.jpg" alt="#"></a>
             <!--Logotipo-->
             <div class="dropdown">
                 <button class="btn" type="button:focus-visible" data-bs-toggle="dropdown" aria-expanded="false">
@@ -95,14 +95,14 @@ $conn->close();
             <h1> <?php echo htmlspecialchars($produto['titulo']); ?></h1>
             <h2>R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></h2>
             <h3>Em até 3x sem juros no cartão</h3>
-            <button>Adicionar á cesta</button>
+            <button type="button" id="adicionar-carrinho">Adicionar á cesta</button>
         </div>
 
         <div class="background">
             <div id="frete2">
                 <h5>Calcular o Frete</h5>
                 <input id="frete" type="text" placeholder="00000-000">
-                <input id="botao" type="button" value="Ok" />
+                <button type="button" id="botao">OK</button>
             </div>
         </div>
 
@@ -171,7 +171,7 @@ $conn->close();
                 <li>
                     <h3>Formas de Pagamento</h3>
                 </li>
-                <img id="img-formas-pagamento" src="img/pagamentos.png">
+                <img id="img-formas-pagamento" src="imagens/pagamentos.png">
             </ul>
 
             <div id="footer_subscribe">
