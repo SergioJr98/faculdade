@@ -11,7 +11,7 @@
 
 body {
   background-color: rgb(231, 230, 230);
-  background-image: linear-gradient(to top right, #858585, #ffffff);
+  background-image: linear-gradient(to top right, #a89fae, #ffffff);
   min-height: 100vh;
   margin: 0;
 }
