@@ -29,7 +29,7 @@ $conn->close();
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Halo 5: Guardians</title>
+    <title><?php echo htmlspecialchars($produto['titulo']); ?> | Gamebook</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
