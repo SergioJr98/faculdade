@@ -131,7 +131,8 @@ $conn->close();
             <?php while ($produto = $result2->fetch_assoc()): ?>
             <div class="item-livro">
                 <a href="produto_livro.php?id=<?php echo $produto['id']; ?>">
-                    <img src="imagens/Livros/produto_livro_<?php echo $produto['id']; ?>.jpg" alt="#">
+                    <img src="imagens/Livros/produto_livro_<?php echo $produto['id']; ?>.jpg"
+                        alt="<?php echo $produto['titulo']; ?>">
                 </a>
             </div>
             <?php endwhile; ?>
@@ -150,7 +151,8 @@ $conn->close();
             <?php while ($produto = $result->fetch_assoc()): ?>
             <div class="item">
                 <a href="produto_jogo.php?id=<?php echo $produto['id']; ?>">
-                    <img src="imagens/jogos/produto_jogo<?php echo $produto['id']; ?>.jpg" alt="#">
+                    <img src="imagens/jogos/produto_jogo<?php echo $produto['id']; ?>.jpg"
+                        alt="<?php echo $produto['titulo']; ?>">
                 </a>
             </div>
             <?php endwhile; ?>
