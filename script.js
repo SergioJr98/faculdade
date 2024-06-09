@@ -1,3 +1,4 @@
+// função usada mais abaixo no carousel (slides) de jogos e livros da página index.php
 function loadShow(items, active) {
   let stt = 0;
   items[active].style.transform = `none`;
@@ -25,6 +26,7 @@ function loadShow(items, active) {
   }
 }
 
+//---INICIO - javascript do carousel (slides) de JOGOS mais vendidos, da página index.php---
 let items = document.querySelectorAll(".slider .item");
 let next = document.getElementById("next");
 let prev = document.getElementById("prev");
@@ -69,8 +71,9 @@ window.onload = function () {
     }
   }, 1500);
 };
+//---FIM - javascript do carousel (slides) de JOGOS mais vendidos---
 
-//card livros----------------------------------------------
+//---INICIO - javascript do carousel (slides) de LIVROS mais vendidos, da página index.php---
 let items_livro = document.querySelectorAll(".slider-livros .item-livro");
 let next_livro = document.getElementById("next-livro");
 let prev_livro = document.getElementById("prev-livro");
@@ -116,3 +119,4 @@ window.onload = function () {
     }
   }, 1500);
 };
+//---FIM - javascript do carousel (slides) de LIVROS mais vendidos---
