@@ -19,3 +19,6 @@ function desconectarBanco() {
 }
 
 ?>
+
+<!-- Observação: é possível importar o banco de dados usado neste trabalho no phpAdmin a partir do 
+ arquivo "gamebook_db.sql", que está na pasta "backend"-->
